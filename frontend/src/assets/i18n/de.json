@@ -142,7 +142,7 @@
     "UP_BUTTON": "Zurück nach oben"
   },
   "SEARCH": {
-      "TITLE": "Dein Thema war nicht dabei? Dann kannst du hier mit eigenen Stichworten deine Anlaufstelle suchen.",
+      "TITLE": "Dein Thema war nicht dabei? Dann kannst du hier mit einem Stichwort deine Anlaufstelle suchen.",
       "PLACEHOLDER": "Suchbegriff eingeben...",
       "LOADING": "Lädt...",
       "WEBSITE_TOOLTIP": "Zur Webseite",
