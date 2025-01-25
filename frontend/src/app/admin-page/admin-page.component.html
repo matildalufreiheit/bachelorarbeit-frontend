@@ -75,7 +75,7 @@
       <!-- Modus: Neu -->
       <div *ngIf="mode === 'neu'">
         <h2>{{ 'OFFER_MANAGEMENT.NEW_OFFER_TITLE' | translate }}</h2>
-        <form (ngSubmit)="createAngebot(name.value, description.value, url.value, nameEn.value, descriptionEn.value, urlEn.value, newSuchbegriffe)" class="border p-4 rounded shadow-sm">
+        <form (ngSubmit)="createAngebot(name.value, description.value, url.value, nameEn.value, descriptionEn.value, urlEn.value, newSuchbegriffe.value)" class="border p-4 rounded shadow-sm">
           <div class="mb-3">
             <label for="name" class="form-label">{{ 'OFFER_MANAGEMENT.NAME_LABEL' | translate }}</label>
             <input id="name" type="text" class="form-control" #name />
@@ -142,8 +142,9 @@
               id="suchbegriffe"
               type="text"
               class="form-control"
-              [(ngModel)]="newSuchbegriffe"
+              name="newSuchbegriffe"
               placeholder="{{ 'OFFER_MANAGEMENT.KEYWORDS_PLACEHOLDER' | translate }}"
+              #newSuchbegriffe
             />
             <small class="form-text text-muted">
               {{ 'OFFER_MANAGEMENT.KEYWORDS_HINT' | translate }}
