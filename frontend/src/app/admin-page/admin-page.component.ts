@@ -501,6 +501,14 @@ private loadArten(): void {
         },
         error: (err) => console.error('Fehler beim Laden der Arten:', err),
       });
+
+      this.dataService.getAngebotById(institutionId).subscribe({
+        next: (response) => {
+          console.log('response suchbegriffe : ', response)
+          this.selectedSuchbegriffe = response.data.Suchbegriffe.toString();
+        },
+        error: (err) => console.error('Fehler beim Laden der Suchbegriffe:', err),
+      })
     } else {
       console.error('Institution nicht gefunden:', institutionId);
       return;
