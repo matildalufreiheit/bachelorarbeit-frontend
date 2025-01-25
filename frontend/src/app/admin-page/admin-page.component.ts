@@ -170,19 +170,19 @@ createAngebot(name: string, description: string, url: string, nameEn: string, de
         name_en: nameEn, // Englischer Name
         beschreibung_en: descriptionEn, // Englische Beschreibung
         url_en: urlEn, // Englische URL
-        artIDs: this.selectedArt, // IDs der ausgewählten Arten
+        arten: this.selectedArt, // IDs der ausgewählten Arten
         url,
         tags: this.selectedTags, // IDs der ausgewählten Tags
         zielgruppen: this.selectedZielgruppen, // IDs der ausgewählten Zielgruppen
         suchebegriffe: suchbegriffe.split(',').map((kw) => kw.trim()), // Split & trim für Freitextfeld
-        institution: {
-          name, // Deutscher Name der Institution
-          beschreibung: description, // Deutsche Beschreibung der Institution
-          url, // Deutsche URL der Institution
-          name_en: nameEn, // Englischer Name der Institution
-          beschreibung_en: descriptionEn, // Englische Beschreibung der Institution
-          url_en: urlEn // Englische URL der Institution
-      }
+      //   institution: {
+      //     name, // Deutscher Name der Institution
+      //     beschreibung: description, // Deutsche Beschreibung der Institution
+      //     url, // Deutsche URL der Institution
+      //     name_en: nameEn, // Englischer Name der Institution
+      //     beschreibung_en: descriptionEn, // Englische Beschreibung der Institution
+      //     url_en: urlEn // Englische URL der Institution
+      // }
     };
 
     console.log('Gesendete Daten:', angebot); // Debugging

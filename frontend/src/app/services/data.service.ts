@@ -137,9 +137,6 @@ export class DataService {
 
 
   // -------------------------------------------------------------  Arten  ----> 2x???
-  // getAngebotsarten(lang: string = 'de'): Observable<any> {
-  //   return this.http.get(`${this.apiUrl}/arten?lang=${lang}`);
-  // }
 
   getArten(lang: string = 'de'): Observable<any> {
     console.log(`API-Aufruf für Arten: ${this.apiUrl}/angebotsarten?lang=${lang}`); // Debugging
@@ -183,11 +180,6 @@ export class DataService {
       })
     );
   }
-  
-  
-  
-
-  
 
 }
 
